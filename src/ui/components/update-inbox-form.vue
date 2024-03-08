@@ -12,7 +12,6 @@
 					:aria-invalid="!!validationMessage"
 					aria-describedby="email-error"
 				/>
-				<TextError id="email-error" :message="validationMessage" />
 			</div>
 			<BaseButton
 				type="submit"
@@ -28,8 +27,6 @@
 	import { computed, ref } from 'vue'
 
 	import BaseButton from '../atoms/base-button.vue'
-	import TextError from '../atoms/text-error.vue'
-	import BaseInput from './base-input.vue'
 
 	import { EmailValidation } from '../../validations/email.validation'
 	import { MailerService } from '../../services/mailer-service'
@@ -47,7 +44,7 @@
 	async function handleSubmit() {
 		isSubmitting.value = true
 		try {
-			validationMessage.value = new EmailValidation().execute(email.value)
+			validationMessage.value = new EmailValidation().execute(email.value) ?? ''
 			if (validationMessage.value) return
 			await props.mailer.send({
 				recipient: email.value,
