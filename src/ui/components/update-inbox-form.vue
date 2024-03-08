@@ -1,6 +1,5 @@
 <template>
 	<form class="update-inbox-form" @submit.prevent="handleSubmit">
-		<p class="update-inbox-form__title">Mande um email</p>
 		<div class="update-inbox-form__content">
 			<div class="field">
 				<BaseInput
@@ -13,20 +12,12 @@
 					aria-describedby="email-error"
 				/>
 			</div>
-			<BaseButton
-				type="submit"
-				class="update-inbox-form__send-button"
-				:disabled="isSubmitting"
-				>{{ buttonText }}</BaseButton
-			>
 		</div>
 	</form>
 </template>
 
 <script setup lang="ts">
 	import { computed, ref } from 'vue'
-
-	import BaseButton from '../atoms/base-button.vue'
 
 	import { EmailValidation } from '../../validations/email.validation'
 	import { MailerService } from '../../services/mailer-service'

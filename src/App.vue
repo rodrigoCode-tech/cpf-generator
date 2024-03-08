@@ -98,6 +98,7 @@
 	let copiedCnpj = ref(false)
 
 	const generateCpfAndScrollToContent = () => {
+		scrollToContent('.generated-cnpj-area')
 		fetch(
 			'https://czihgc8hvg.execute-api.us-east-1.amazonaws.com/dev/generate-cpf?type=cpf'
 		)
@@ -109,12 +110,12 @@
 			})
 			.then((data) => {
 				generatedCpf.value = data.trim()
-				scrollToContent('.generated-cpf-area')
 			})
 			.catch((error) => alert('Erro ao gerar CPF: ' + error.message))
 	}
 
 	const generateCnpjAndScrollToContent = () => {
+		scrollToContent('.generated-cnpj-area')
 		fetch(
 			'https://czihgc8hvg.execute-api.us-east-1.amazonaws.com/dev/generate-cpf?type=cnpj'
 		)
@@ -126,7 +127,6 @@
 			})
 			.then((data) => {
 				generatedCnpj.value = data.trim()
-				scrollToContent('.generated-cnpj-area')
 			})
 			.catch((error) => alert('Erro ao gerar CNPJ: ' + error.message))
 	}
@@ -136,7 +136,7 @@
 			const yOffset = -50
 			const y =
 				element.getBoundingClientRect().top + window.pageYOffset + yOffset
-			window.scrollTo({ top: y, behavior: 'smooth' })
+			window.scrollTo({ top: y, behavior: 'instant' })
 		}
 	}
 

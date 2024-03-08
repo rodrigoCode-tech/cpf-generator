@@ -8,7 +8,8 @@
 
 <style scoped>
 	.base-logo {
-		width: 89px;
+		width: 100px;
 		height: 32px;
+		margin-bottom: 25px;
 	}
 </style>
