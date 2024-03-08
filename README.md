@@ -1,6 +1,6 @@
- # Sistama Para criar Cpfs e Cnpjs para testes
+ # Sistema Para criar Cpfs e Cnpjs para testes
 
-Desenvolvimento utilizando VueJS, javascript.
+Desenvolvimento utilizando VueJS
 
 Este é um projeto frontend em vueJs que implementa uma API em java para gerar CPFs e CNPJs válidos de forma aleatória. A API foi desenvolvida usando o framework AWS Lambda e API Gateway da Amazon Web Services (AWS).
 
