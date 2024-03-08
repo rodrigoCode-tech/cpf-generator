@@ -77,20 +77,16 @@
 		</section>
 	</main>
 	<TheFooter>
-		<template #right>
-			<UpdateInboxForm :mailer="new MailerServiceImpl()" />
-		</template>
+		<template #right> </template>
 	</TheFooter>
 </template>
 
 <script setup lang="ts">
 	import { ref } from 'vue'
-	import UpdateInboxForm from './ui/components/update-inbox-form.vue'
 	import TheHeader from './ui/components/the-header.vue'
 	import TheFooter from './ui/components/the-footer.vue'
 	import Companies from './ui/components/companies.vue'
 	import BaseLink from './ui/atoms/base-link.vue'
-	import { MailerServiceImpl } from './services/impl/mailer-service'
 
 	let generatedCpf = ref('')
 	let generatedCnpj = ref('')
