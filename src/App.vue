@@ -7,7 +7,10 @@
 					<h1 class="text-head__primary hero__information__texts__title">
 						CPF Generator
 					</h1>
-					<p>Sistema para gerar CPFs e CNPJs aleatórios para testes</p>
+					<p>
+						Sistema web para geração de CPFs e CNPJs aleatórios para fins de
+						teste
+					</p>
 				</div>
 				<button
 					class="generate-cpf-button"
@@ -56,8 +59,8 @@
 					<div class="lets-talk__texts">
 						<h1 class="text-head__contact">Entre em contato</h1>
 						<p>
-							Sou Rodrigo Desenvolvedor Full Stack, Para mais informações entre
-							em contatos pelas redes abaixo, confira também meu portfólio
+							Sou Rodrigo Braga Desenvolvedor Full Stack, Para mais informações
+							entre em contatos pelas redes abaixo, confira também meu portfólio
 						</p>
 					</div>
 					<BaseLink
