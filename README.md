@@ -1,34 +1,41 @@
- # Landing Page with VueJS
+ # Sistama Para criar Cpfs e Cnpjs para testes
 
-Desenvolvimento de uma Landing Page com VueJS.
+Desenvolvimento utilizando VueJS, javascript.
 
-Este projeto foi desenvolvido como uma maneira de praticar e relembrar funcionalidades e estrutura de um projeto VueJS. A aplicação foi construída com um número mínimo de ferramentas externas, permitindo um foco principal no [VueJS](https://vuejs.org/) e no [Typescript](https://www.typescriptlang.org/).
+Este é um projeto frontend em vueJs que implementa uma API em java para gerar CPFs e CNPJs válidos de forma aleatória. A API foi desenvolvida usando o framework AWS Lambda e API Gateway da Amazon Web Services (AWS).
 
-O design da aplicação foi inspirado por uma interface criada por [Anima](https://www.figma.com/@anima) no Figma. Se você estiver interessado em explorar a interface original, sinta-se à vontade para [visitar o projeto](https://www.figma.com/community/file/1087732910924856721/landing-page-template-export-html-css-or-connect-a-domain-lp-to-html).
+## CPF Generator
 
-## Tecnologias
-- [VueJS](https://vuejs.org/)
-- [Typescript](https://www.typescriptlang.org/)
+Sistema web para geração de CPFs e CNPJs aleatórios para fins de teste. Desenvolvido com Vue.js, este projeto oferece uma maneira fácil e rápida de gerar números de CPF e CNPJ válidos para uso em testes de software.
 
-## Rodando o projeto
+### Funcionalidades
 
-Você precisa ter o [Git](https://git-scm.com/) e algum gerenciador de pacotes([NPM](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm/) | [Yarn](https://classic.yarnpkg.com/lang/en/docs/install)) instalados em sua máquina.
+- Geração de CPFs aleatórios
+- Geração de CNPJs aleatórios
+- Copiar CPFs e CNPJs gerados para a área de transferência
+- Interface simples e intuitiva
 
-### Preparando o ambiente
-```bash
-1. Clone o repositório:
-$ git clone https://github.com/gabriellima2/landing-page-vue.git
+### Tecnologias Utilizadas
 
-2. Acesse a pasta e instale as dependências via terminal:
-$ yarn / npm i
-```
+- Vue.js
+- TypeScript
+- HTML
+- CSS
 
-### Rodando a aplicação
-```bash
-1. Inicie a aplicação em modo de desenvolvimento:
-$ yarn dev / npm run dev
+### Como Usar
 
-2. O servidor será aberto em http://localhost:5173
-```
+1. Clone este repositório
+2. Instale as dependências com `npm install`
+3. Inicie o servidor de desenvolvimento com `npm run dev`
+4. Acesse o projeto em `http://localhost:5173/`
 
-<p align="center">Made with 💙 by <a href="https://www.linkedin.com/in/gabriel-lima-860612236">Gabriel Lima</a></p>
+### Contribuição
+
+Contribuições são bem-vindas! Sinta-se à vontade para abrir uma issue ou enviar um pull request.
+
+### Autor
+
+Rodrigo Braga -
+[Linkedin](https://www.linkedin.com/in/rodrigobraga0125/)
+[GitHub](https://github.com/rodrigoCode-tech)
+
