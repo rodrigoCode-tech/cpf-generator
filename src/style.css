@@ -1,0 +1,105 @@
+:root {
+  --primary-gray: #2B2B2B;
+	--dark-gray: #333333;
+	--green: #009379;
+	--blue: #3366FF;
+	--red: #FF6250;
+	--yellow: #FFDF90;
+	--purple: #BFAFF2;
+	--light-gray: #C4C4C4;
+	--white: #FFFFFF;
+
+	--primary-font: "Poppins", sans-serif;
+}
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+}
+
+body {
+  display: flex;
+	justify-content: center;
+	font-size: 18px;
+	color: var(--white);
+	font-family: var(--primary-font);
+	background-color: var(--primary-gray);
+}
+
+li {
+	list-style: none;
+}
+
+ul {
+	padding: 0px;
+}
+
+p, small {
+	opacity: 0.4;
+	font-weight: 300;
+	line-height: 1.778rem;
+	font-size: 1rem;
+}
+
+button {
+	color: var(--dark-gray);
+	font-family: var(--primary-font);
+}
+
+a {
+	text-decoration: none;
+}
+
+button, a {
+	font-size: 1rem;
+	cursor: pointer;
+	transition: opacity 0.2s ease;
+	&:hover {
+		opacity: 0.8;
+	}
+}
+
+h1, h2, h3, h4, h5, h6, p, small {
+	margin-block-start: 0px;
+	margin-block-end: 0px;
+}
+
+.text-body__primary {
+	line-height: 1.778rem;
+	font-size: 1rem;
+}
+
+.text-body__secondary {
+	line-height: 2.222rem;
+	font-size: 1.333rem;
+}
+
+.text-head__primary {
+	font-size: 60px;
+	line-height: 90px;
+}
+
+.text-head__secondary {
+	font-size: 40px;
+	line-height: 60px;
+}
+
+.button {
+	width: 175px;
+	height: 50px;
+	color: var(--dark-gray);
+	font-family: var(--primary-font);
+	border: none;
+	border-radius: 15px;
+	background-color: var(--purple);
+}
+
+#app {
+	width: 100%;
+  max-width: 1280px;
+	padding: 0px 20px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
