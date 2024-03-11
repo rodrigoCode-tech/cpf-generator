@@ -9,17 +9,23 @@
 					>
 				</li>
 				<li>
-					<TextLink href="https://www.linkedin.com/in/rodrigobraga0125/"
+					<TextLink
+						href="https://www.linkedin.com/in/rodrigobraga0125/"
+						target="_blank"
 						>Linkedin</TextLink
 					>
 				</li>
 				<li>
-					<TextLink href="https://www.instagram.com/rodrigobraga_dev/"
+					<TextLink
+						href="https://www.instagram.com/rodrigobraga_dev/"
+						target="_blank"
 						>Instagram</TextLink
 					>
 				</li>
 				<li>
-					<TextLink href="https://github.com/rodrigoCode-tech">Github</TextLink>
+					<TextLink href="https://github.com/rodrigoCode-tech" target="_blanck"
+						>Github</TextLink
+					>
 				</li>
 			</ul>
 			<slot name="right"></slot>
